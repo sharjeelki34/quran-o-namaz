@@ -3,193 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Namaz, Quran, Dua-e-Qunoot aur Kalme</title>
+    <title>Islami Taleem o Rahnumai</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f2f7f4;
-            color: #222;
+            font-family: 'Amiri', 'Noto Nastaliq Urdu', 'Segoe UI', Tahoma, sans-serif;
+            background-color: #f4f6f0;
+            background-image: radial-gradient(#d4af37 0.75px, transparent 0.75px), radial-gradient(#d4af37 0.75px, #f4f6f0 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            color: #2b2b2b;
             margin: 0;
             padding: 15px;
             direction: rtl;
         }
         .header {
             text-align: center;
-            background: #0f5132;
-            color: white;
-            padding: 25px 15px;
-            border-radius: 12px;
+            background: linear-gradient(135deg, #0b3c24, #145a32);
+            color: #f39c12;
+            padding: 30px 15px;
+            border-radius: 15px;
             margin-bottom: 25px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            border: 2px solid #d4af37;
+            position: relative;
         }
-        .header h1 { margin: 0 0 10px 0; font-size: 26px; }
-        .header p { margin: 0; font-size: 14px; opacity: 0.9; }
+        .header h1 { margin: 0 0 10px 0; font-size: 28px; color: #f39c12; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); }
+        .header p { margin: 0; font-size: 15px; color: #ffffff; }
+        .star-icon { font-size: 20px; color: #f39c12; margin: 0 5px; }
         
         .section-title {
-            background-color: #198754;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 8px;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 20px;
+            background: linear-gradient(135deg, #145a32, #1e8449);
+            color: #ffffff;
+            padding: 12px 20px;
+            border-radius: 10px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-size: 22px;
+            text-align: center;
+            border: 1px solid #d4af37;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
         }
         
         .card {
-            background: white;
-            padding: 20px;
+            background: #ffffff;
+            padding: 22px;
             margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border-right: 5px solid #198754;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            border: 1px solid #e2d9c2;
+            border-right: 6px solid #145a32;
+            position: relative;
         }
         
-        h2 { color: #0f5132; margin-top: 0; font-size: 20px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+        h2 { 
+            color: #145a32; 
+            margin-top: 0; 
+            font-size: 20px; 
+            border-bottom: 2px dashed #d4af37; 
+            padding-bottom: 8px; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
         
         .arabic {
-            font-size: 24px;
-            color: #198754;
+            font-size: 26px;
+            color: #0b3c24;
             font-weight: bold;
-            line-height: 2;
-            margin: 12px 0;
+            line-height: 2.2;
+            margin: 15px 0;
             text-align: right;
+            background-color: #fcf8ee;
+            padding: 12px;
+            border-radius: 8px;
+            border-right: 4px solid #f39c12;
         }
         
         .translation {
-            font-size: 15px;
-            color: #444;
-            line-height: 1.8;
+            font-size: 16px;
+            color: #333333;
+            line-height: 1.9;
             background-color: #f9f9f9;
-            padding: 10px 12px;
-            border-radius: 6px;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid #eee;
         }
         
         .step {
-            margin-bottom: 15px;
+            margin-bottom: 18px;
+            background: #fdfbf7;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #f0e6d2;
         }
         .step-title {
             font-weight: bold;
-            color: #0f5132;
+            color: #145a32;
+            font-size: 17px;
+            margin-bottom: 5px;
+            display: block;
         }
 
-        /* Footer styling for POWERED BY SHARJEEL */
         .footer {
             text-align: center;
-            background-color: #0f5132;
-            color: white;
-            padding: 15px;
+            background: linear-gradient(135deg, #0b3c24, #145a32);
+            color: #f39c12;
+            padding: 18px;
             border-radius: 10px;
-            margin-top: 30px;
+            margin-top: 40px;
             font-weight: bold;
-            letter-spacing: 1px;
-            direction: ltr; /* English text formatting */
+            letter-spacing: 2px;
+            border: 2px solid #d4af37;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <h1>Islami Taleem o Rahnumai</h1>
-        <p>Kalme, Namaz ka Tareeqa, Dua-e-Qunoot aur Surah Ba Tarjuma</p>
+        <h1><span class="star-icon">☪</span> islami taleem o rahnumai <span class="star-icon">☪</span></h1>
+        <p>chhe kalme, namaz ka mukammal tareeqa, dua-e-qunoot aur quran ki suratein ba-tarjuma</p>
     </div>
 
-    <!-- 1. CHHON KALME -->
-    <div class="section-title">1. Shesh Kalme (6 Kalme)</div>
+    <!-- 1. CHHE KALME -->
+    <div class="section-title">✨ chhe (6) kalme ✨</div>
 
     <div class="card">
-        <h2>Pehla Kalma: Tayyab</h2>
-        <p class="arabic">لَا إِلٰهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ اللهِ</p>
-        <p class="translation"><strong>Tarjuma:</strong> Allah ke siwa koi mabood nahi, Muhammad (S.A.W) Allah ke Rasool hain.</p>
-    </div>
-
-    <div class="card">
-        <h2>Doosra Kalma: Shahadat</h2>
-        <p class="arabic">أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ</p>
-        <p class="translation"><strong>Tarjuma:</strong> Main gawah deta hoon ke Allah ke siwa koi mabood nahi, aur main gawah deta hoon ke Muhammad (S.A.W) Allah ke bande aur Rasool hain.</p>
+        <h2>pehla kalma: tayyab <span>☪</span></h2>
+        <div class="arabic">لَا إِلٰهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ اللهِ</div>
+        <div class="translation"><strong>tarjuma:</strong> allah ke siwa koi ma'bood nahi, aur hazrat muhammad sallallahu alaihi wasallam allah ke rasool hain.</div>
     </div>
 
     <div class="card">
-        <h2>Teesra Kalma: Tamjeed</h2>
-        <p class="arabic">سُبْحَانَ اللهِ وَالْحَمْدُ لِلَّهِ وَلَا إِلٰهَ إِلَّا اللهُ وَاللهُ أَكْبَرُ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ الْعَلِيِّ الْعَظِيمِ</p>
-        <p class="translation"><strong>Tarjuma:</strong> Allah pak hai aur tamam tareefain Allah hi ke liye hain, Allah ke siwa koi mabood nahi aur Allah sab se bada hai. Gunah se bachne ki taqat aur neki karne ki quwwat nahi magar Allah hi ki taraf se jo buland azmat wala hai.</p>
+        <h2>doosra kalma: shahadat <span>☪</span></h2>
+        <div class="arabic">أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ</div>
+        <div class="translation"><strong>tarjuma:</strong> main gawahi deta hoon ke allah ke siwa koi ma'bood nahi aur main yeh bhi gawahi deta hoon ke hazrat muhammad sallallahu alaihi wasallam uske bande aur rasool hain.</div>
+    </div>
+
+    <div class="card">
+        <h2>teesra kalma: tamjeed <span>☪</span></h2>
+        <div class="arabic">سُبْحَانَ اللهِ وَالْحَمْدُ لِلَّهِ وَلَا إِلٰهَ إِلَّا اللهُ وَاللهُ أَكْبَرُ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ الْعَلِيِّ الْعَظِيمِ</div>
+        <div class="translation"><strong>tarjuma:</strong> allah pak hai aur tamam tareefain allah hi ke liye hain, aur allah ke siwa koi ma'bood nahi, aur allah sab se bada hai. gunah se bachne ki taqat aur neki karne ki quwwat nahi magar allah hi ki taraf se jo buland azmat wala hai.</div>
+    </div>
+
+    <div class="card">
+        <h2>chautha kalma: tauheed <span>☪</span></h2>
+        <div class="arabic">لَا إِلٰهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ حَيُّ لَا يَمُوتُ أَبَدًا أَبَدًا، ذُوالْجَلَالِ وَالْإِكْرَامِ، بِيَدِهِ الْخَيْرُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ</div>
+        <div class="translation"><strong>tarjuma:</strong> allah ke siwa koi ma'bood nahi, woh akela hai uska koi shareek nahi, usi ki baadshahi hai aur usi ke liye tamam tareef hai, wahi zinda karta hai aur wahi maut deta hai, aur woh zinda hai jise kabhi maut nahi aayegi, bade jalal aur buzurgi wala hai, usi ke haath me bhalai hai aur woh har cheez par qadir hai.</div>
+    </div>
+
+    <div class="card">
+        <h2>paanchवां kalma: istighfar <span>☪</span></h2>
+        <div class="arabic">أَسْتَغْفِرُ اللهَ رَبِّي مِنْ كلِ ذَنْبٍ أَذْنَبْتُهُ عَمْدًا أَوْ خَطَأً سِرًّا أَعْلَانِيَةً وَأَتُوبُ إِلَيْهِ مِنَ الذَّنْبِ الَّذِي أَعْلَمُ وَمِنَ الذَّنْبِ الَّذِي لَا أَعْلَمُ، إِنَّكَ أَنْتَ عَلَّامُ الْغُيُوبِ وَسَتَّارُ الْعُيُوبِ وَغَفَّارُ الذُّنُوبِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ الْعَلِيِّ الْعَظِيمِ</div>
+        <div class="translation"><strong>tarjuma:</strong> main apne rab allah se har us gunah ki maafi maangta hoon jo maine jaan boojh kar ya galti se, chhip kar ya khule aam kiya, aur us gunah se tauba karta hoon jise main jaanta hoon aur us gunah se bhi jise main nahi jaanta. beshak tu hi chhipo ko jaanane wala, aibo ko chhupane wala aur gunaho ko bakshane wala hai, aur gunah se bachne ki taqat aur neki ki quwwat nahi magar allah ki taraf se jo buland azmat wala hai.</div>
+    </div>
+
+    <div class="card">
+        <h2>chhaṭa kalma: radd-e-kufr <span>☪</span></h2>
+        <div class="arabic">اَللّٰهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ أَنْ أُشْرِكَ بِكَ شَيْئًا وَأَنَا أَعْلَمُ بِهِ، وَأَسْتَغْفِرُكَ لِمَا لَا أَعْلَمُ بِهِ، تُبْتُ عَنْهُ وَتَبَرَّأْتُ مِنَ الْكُفْرِ وَالشِّرْكِ وَالْمِعْصِيَةِ كُلِّهَا، وَأَسْلَمْتُ وَآمُنْتُ وَأَقُولُ لَا إِلٰهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ اللهِ</div>
+        <div class="translation"><strong>tarjuma:</strong> ae allah! main teri panah maangta hoon is baat se ke kisi cheez ko jaan boojh kar tera shareek banaun, aur tujh se us gunah ki maafi maangta hoon jiska mujhe ilm nahi. maine us se tauba ki aur main kufr, shirk aur tamam na-farmaaniyon se be-zaar ho gaya. maine islam qubool kiya aur iman laya aur kehta hoon ke allah ke siwa koi ma'bood nahi aur hazrat muhammad sallallahu alaihi wasallam allah ke rasool hain.</div>
     </div>
 
     <!-- 2. NAMAZ KA TAREEQA -->
-    <div class="section-title">2. Namaz Ka Mukammal Tareeqa</div>
+    <div class="section-title">✨ namaz ka mukammal tareeqa ✨</div>
 
     <div class="card">
-        <h2>Namaz ki Niyyat aur Tareeqa</h2>
+        <h2>namaz ke faraiz aur arkaan <span>☪</span></h2>
         
         <div class="step">
-            <span class="step-title">1. Niyyat:</span>
-            <p class="translation">Maine niyyat ki do (ya char) rak'at namaz (fard/sunnat), waqt (fajar/zohar/asar/maghrib/isha) ka, waaste Allah Ta'ala ke, rukh mera Ka'aba Sharif ki taraf.</p>
+            <span class="step-title">1. niyat:</span>
+            <div class="translation">jis namaz ko padhna ho dil me uska irada karein, zabaan se kehna bhi behtar hai (jaise: maine niyat ki do rak'at namaz fard... waste allah tala ke, rukh mera ka'aba sharif ki taraf).</div>
         </div>
 
         <div class="step">
-            <span class="step-title">2. Takbeer-e-Tahreema:</span>
-            <p class="translation">Dono hath kaano tak utha kar <strong>"Allahu Akbar"</strong> kahein aur naaf ke niche hath baandh lein.</p>
+            <span class="step-title">2. takbeer-e-tahreema:</span>
+            <div class="translation">dono haath kaano tak utha kar hatheliyan qibla ki taraf rakhein aur <strong>"allahu akbar"</strong> keh kar haath naaf ke niche baandh lein.</div>
         </div>
 
         <div class="step">
-            <span class="step-title">3. Sana (Subehanaka):</span>
-            <p class="arabic">سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ وَتَبَارَكَ اسْمُكَ وَتَعَالَى جَدُّكَ وَلَا إِلٰهَ غَيْرُكَ</p>
-            <p class="translation"><strong>Tarjuma:</strong> Ae Allah! Hum Teri pakizgi bayan karte hain aur Teri tareef karte hain, Tera naam barkat wala hai aur Teri shaan buland hai aur Tere siwa koi mabood nahi.</p>
+            <span class="step-title">3. sana (subhanaka):</span>
+            <div class="arabic">سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ وَتَبَارَكَ اسْمُكَ وَتَعَالَى جَدُّكَ وَلَا إِلٰهَ غَيْرُكَ</div>
+            <div class="translation"><strong>tarjuma:</strong> ae allah! hum teri pakeezgi bayan karte hain aur teri tareef karte hain, tera naam barkat wala hai aur teri shaan buland hai aur tere siwa koi ma'bood nahi.</div>
         </div>
 
         <div class="step">
-            <span class="step-title">4. Tashahhud (At-Tahiyyaat):</span>
-            <p class="arabic">التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ</p>
-            <p class="translation"><strong>Tarjuma:</strong> Tamam qaoli, badni aur mali ibadatain Allah hi ke liye hain. Salam ho aap par ae Nabi aur Allah ki rehmatain aur uski barkatain ho. Salam ho hum par aur Allah ke nek bandon par. Main gawah deta hoon ke Allah ke siwa koi mabood nahi aur Muhammad (S.A.W) Uske bande aur Rasool hain.</p>
+            <span class="step-title">4. at-tahiyyaat (tashahhud):</span>
+            <div class="arabic">التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ</div>
+            <div class="translation"><strong>tarjuma:</strong> tamam qaoli, badni aur maali ibadatain allah hi ke liye hain. salam ho aap par ae nabi aur allah ki rehmatain aur uski barkatain hon. salam ho hum par aur allah ke nek bando par. main gawahi deta hoon ke allah ke siwa koi ma'bood nahi aur hazrat muhammad sallallahu alaihi wasallam uske bande aur rasool hain.</div>
         </div>
 
         <div class="step">
-            <span class="step-title">5. Durood-e-Ibrahimi:</span>
-            <p class="arabic">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ</p>
-            <p class="translation"><strong>Tarjuma:</strong> Ae Allah! Reham farma Muhammad (S.A.W) par aur Unki aal par, jaise Tu ne reham farmaya Ibraheem (A.S) par aur Unki aal par. Beshak Tu tareef kiya gaya buzurgi wala hai.</p>
+            <span class="step-title">5. durood-e-ibrahimi:</span>
+            <div class="arabic">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ</div>
+            <div class="translation"><strong>tarjuma:</strong> ae allah! reham farma hazrat muhammad sallallahu alaihi wasallam par aur unki aal par, jaise tune reham farmaya hazrat ibrahim alaihissalam par aur unki aal par. beshak tu tareef kiya gaya buzurgi wala hai.</div>
         </div>
     </div>
 
     <!-- 3. DUA-E-QUNOOT -->
-    <div class="section-title">3. Dua-e-Qunoot (Namaz-e-Witr)</div>
+    <div class="section-title">✨ dua-e-qunoot (namaz-e-witr) ✨</div>
 
     <div class="card">
-        <h2>Dua-e-Qunoot</h2>
-        <p class="arabic">اللَّهُمَّ إِنَّا نَسْتَعِينُكَ وَنَسْتَغْفِرُكَ وَنُؤْمِنُ بِكَ وَنَتَوَكَّلُ عَلَيْكَ وَنُثْنِي عَلَيْكَ الْخَيْرَ وَنَشْكُرُكَ وَلَا نَكْفُرُكَ وَنَخْلَعُ وَنَتْرُكُ مَنْ يَفْجُرُكَ ، اللَّهُمَّ إِيَّاكَ نَعْبُدُ وَلَكَ نُصَلِّي وَنَسْجُدُ وَإِلَيْكَ نَسْعَى وَنَحْفِدُ وَنَرْجُو رَحْمَتَكَ وَنَخْشَى عَذَابَكَ إِنَّ عَذَابَكَ بِالْكُفَّارِ مُلْحَقٌ</p>
-        <p class="translation"><strong>Tarjuma:</strong> Ae Allah! Hum Tujh se madad maangte hain aur Tujh se maafi maangte hain, aur Tujh par imaan laate hain aur Tujh par bharosa karte hain. Aur Teri behtareen tareef karte hain aur Tera shukr ada karte hain aur Teri na-shukri nahi karte. Aur alag karte hain aur chhodte hain us shakhs ko jo Teri nafarmaani kare. Ae Allah! Hum Teri hi ibadat karte hain aur Tere hi liye namaz padhte hain aur sajda karte hain, aur Teri hi taraf daudte aur khidmat ke liye hazir hote hain. Hum Teri rehmat ke ummidwar hain aur Tere azab se darte hain, beshak Tera azab kafiron ko pahunchne wala hai.</p>
+        <h2>dua-e-qunoot <span>☪</span></h2>
+        <div class="arabic">اللَّهُمَّ إِنَّا نَسْتَعِينُكَ وَنَسْتَغْفِرُكَ وَنُؤْمِنُ بِكَ وَنَتَوَكَّلُ عَلَيْكَ وَنُثْنِي عَلَيْكَ الْخَيْرَ وَنَشْكُرُكَ وَلَا نَكْفُرُكَ وَنَخْلَعُ وَنَتْرُكُ مَنْ يَفْجُرُكَ ، اللَّهُمَّ إِيَّاكَ نَعْبُدُ وَلَكَ نُصَلِّي وَنَسْجُدُ وَإِلَيْكَ نَسْعَى وَنَحْفِدُ وَنَرْجُو رَحْمَتَكَ وَنَخْشَى عَذَابَكَ إِنَّ عَذَابَكَ بِالْكُفَّارِ مُلْحَقٌ</div>
+        <div class="translation"><strong>tarjuma:</strong> ae allah! hum tujh se madad maangte hain aur tujh se maafi maangte hain, aur tujh par iman laate hain aur tujh par bharosa karte hain. aur teri behtareen tareef karte hain aur tera shukr ada karte hain aur teri na-shukri nahi karte. aur alag karte hain aur chhodte hain us shakhs ko jo teri na-farmani kare. ae allah! hum teri hi ibadat karte hain aur tere hi liye namaz padhte hain aur sajda karte hain, aur teri hi taraf daudte aur khidmat ke liye hazir hote hain. hum teri rehmat ke ummidwar hain aur tere azab se darte hain, beshak tera azab kafiron ko pahunchne wala hai.</div>
     </div>
 
     <!-- 4. QURAN KI SURATEIN -->
-    <div class="section-title">4. Qurani Suratein (Ba-Tarjuma)</div>
+    <div class="section-title">✨ quran ki mukhtasir suratein ✨</div>
 
     <div class="card">
-        <h2>Surah Al-Fatiha</h2>
-        <p class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
-        <p class="arabic">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۝ الرَّحْمَٰنِ الرَّحِيمِ ۝ مَالِكِ يَوْمِ الدِّينِ ۝ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ۝ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ۝ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</p>
-        <p class="translation"><strong>Tarjuma:</strong> Shuru Allah ke naam se jo behad meherbaan aur nihayat raham wala hai. Sab tareefain Allah hi ke liye hain jo tamaam jahano ka paalne wala hai. Behad meherbaan, nihayat raham karne wala. Jaza aur saza ke din ka malik. Hum Teri hi ibadat karte hain aur Tujh hi se madad maangte hain. Humain seedha rasta dikha, un logon ka rasta jin par Tu ne in'aam kiya, na unka jin par ghazab hua aur na gumrahon ka.</p>
+        <h2>surah al-fatiha <span>☪</span></h2>
+        <div class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ۝ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۝ الرَّحْمَٰنِ الرَّحِيمِ ۝ مَالِكِ يَوْمِ الدِّينِ ۝ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ۝ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ۝ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</div>
+        <div class="translation"><strong>tarjuma:</strong> shuru allah ke naam se jo behad meherbaan aur nihayat raham wala hai. sab tareefain allah hi ke liye hain jo tamaam jahano ka paalne wala hai. behad meherbaan, nihayat raham karne wala. jaza aur saza ke din ka malik. hum teri hi ibadat karte hain aur tujh hi se madad maangte hain. humain seedha rasta dikha, un logon ka rasta jin par tune in'aam kiya, na unka jin par ghazab hua aur na gumrahon ka.</div>
     </div>
 
     <div class="card">
-        <h2>Surah Al-Ikhlas</h2>
-        <p class="arabic">قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ</p>
-        <p class="translation"><strong>Tarjuma:</strong> Aap keh dijiye: Woh Allah ek hai. Allah be-niyaz hai. Na Uski koi aulaad hai aur na Woh kisi ki aulaad hai. Aur na koi Uska hum-sar (barabar) hai.</p>
+        <h2>surah al-ikhlas <span>☪</span></h2>
+        <div class="arabic">قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ</div>
+        <div class="translation"><strong>tarjuma:</strong> aap keh dijiye: woh allah ek hai. allah be-niyaz hai. na uski koi aulaad hai aur na woh kisi ki aulaad hai. aur na koi uska hum-sar (barabar) hai.</div>
     </div>
 
     <div class="card">
-        <h2>Surah Al-Falaq</h2>
-        <p class="arabic">قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ</p>
-        <p class="translation"><strong>Tarjuma:</strong> Aap keh dijiye: Main subah ke Rab ki panah maangta hoon, us cheez ke shar se jo Usne paida ki, aur andheri raat ke shar se jab woh chha jaye, aur girho (gantho) me phoonkne waliyon ke shar se, aur hasad karne wale ke shar se jab woh hasad kare.</p>
+        <h2>surah al-falaq <span>☪</span></h2>
+        <div class="arabic">قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ</div>
+        <div class="translation"><strong>tarjuma:</strong> aap keh dijiye: main subah ke rab ki panah maangta hoon, us cheez ke shar se jo usne paida ki, aur andheri raat ke shar se jab woh chha jaye, aur girho (gantho) me phoonkne waliyon ke shar se, aur hasad karne wale ke shar se jab woh hasad kare.</div>
     </div>
 
     <div class="card">
-        <h2>Surah An-Nas</h2>
-        <p class="arabic">قُلْ أَعُوذُ بِرَبِّ النَّاسِ ۝ مَلِكِ النَّاسِ ۝ إِلٰهِ النَّاسِ ۝ مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ۝ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ ۝ مِنَ الْجِنَّةِ وَالنَّاسِ</p>
-        <p class="translation"><strong>Tarjuma:</strong> Aap keh dijiye: Main logon ke Rab ki panah maangta hoon, logon ke Badshah ki, logon ke Mabood ki, us waswasa daalne wale ke shar se jo piche hat jata hai, jo logon ke seeno me waswasa daalta hai, chahe woh jinno me se ho ya insano me se.</p>
+        <h2>surah an-nas <span>☪</span></h2>
+        <div class="arabic">قُلْ أَعُوذُ بِرَبِّ النَّاسِ ۝ مَلِكِ النَّاسِ ۝ إِلٰهِ النَّاسِ ۝ مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ۝ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ ۝ مِنَ الْجِنَّةِ وَالنَّاسِ</div>
+        <div class="translation"><strong>tarjuma:</strong> aap keh dijiye: main logon ke rab ki panah maangta hoon, logon ke badshah ki, logon ke ma'bood ki, us waswasa daalne wale ke shar se jo piche hat jata hai, jo logon ke seeno me waswasa daalta hai, chahe woh jinno me se ho ya insano me se.</div>
     </div>
 
     <!-- POWERED BY SHARJEEL FOOTER -->
     <div class="footer">
-        POWERED BY SHARJEEL
+        ✨ POWERED BY SHARJEEL ✨
     </div>
 
 </body>
-  </html>
+    </html>
